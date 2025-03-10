@@ -3,8 +3,6 @@ services:
     build:
       context: flask-app
       dockerfile: Dockerfile
-    ports:
-      - '80:80'
   nginx: 
     image: nginx:latest
     ports: 
