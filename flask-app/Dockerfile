@@ -8,5 +8,5 @@ RUN pip install -r ./requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "--workers", "3", "--bind", "0.0.0.0:8080", "app:app"]
+CMD ["gunicorn", "--workers", "3", "--bind", "0.0.0.0:80", "app:app"]
 # Gunicorn error was fixed by doing pip install gunicorn and rebuilding the container.
