@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 services:
   flask-app:
     image: talentedpianist/flask-running-app:latest
@@ -8,4 +9,16 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     depends_on:
+=======
+services:
+  flask-app:
+    image: talentedpianist/flask-running-app:latest
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+>>>>>>> 897c9663d962839ab43e6fdbc8843d502070155d
       - flask-app

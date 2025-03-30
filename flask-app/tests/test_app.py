@@ -13,9 +13,9 @@ def test_calculate_race_times():
     # TODO: complete the dict with the expected times
     distance_result = { 
         "5K": "25:00",
-        "10K": "",
-        "Half Marathon": "",
-        "Marathon": ""
+        "10K": "50:00",
+        "Half Marathon": "1:45:29",
+        "Marathon": "3:30:58"
     }
 
     assert calculate_race_times(5) == distance_result 
