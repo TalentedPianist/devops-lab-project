@@ -74,7 +74,7 @@
 
     - name: Pull latest flask-app image
       docker_image:
-        name: "{{ vault_docker_hub_username }}/flask-running-app"
+        name: "{{ vault_docker_hub_username }}/flask-app"
         tag: latest
         source: pull
 
