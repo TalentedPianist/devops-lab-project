@@ -1,6 +1,6 @@
 services:
   flask-app:
-    image: talentedpianist/flask-running-app:latest
+    image: talentedpianist/flask-app:latest
   nginx:
     image: nginx:latest
     ports:
